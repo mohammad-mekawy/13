@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HOME</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="main-container">
+        <img src="1.png" alt="" class="img-responsive">
+        <img src="2.png" alt="" class="img-responsive">
+        <div class="logo-part">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="index.html"> <img src="logo.png" alt="" class="pull-left">
+                        </a>
+                        <div class="text pull-left">
+                            <h4>Medical Arabic-Turkish Investing Holding Company</h4>
+                            <h4 dir="rtl"> الشركة الطبية العربية التركية للإستثمار القابضة</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <img src="icons.png" alt="" class="icons">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-part text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-push-3">
+                        <div class="circle-box">
+                            <div class="circle"><a href="matihco.html">MATIHCO</a></div>
+                            <div class="circle"><a href="#">NEWS</a></div>
+                            <div class="circle"><a href="#">INVESMENT CHANCES </a></div>
+                            <div class="circle active"><a href="#">INVESMNT IN TURKEY</a></div>
+                            <div class="circle"><a href="#">CONTACT US</a></div>
+                            <div class="circle"><a href="#">OUR PARTNERS </a></div>
+                            <div class="circle"><a href="#">PROJECTS </a></div>
+                            <div class="circle"><a href="#">EVENTS </a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".circle").click(function() {
+                window.location = $(this).children().attr("href");
+            })
+        });
+    </script>
+</body>
+
+</html>
