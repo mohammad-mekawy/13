@@ -22,7 +22,7 @@
         <img src="1.png" alt="" class="img-responsive">
         <img src="2.png" alt="" class="img-responsive">
         <div class="logo-part">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6">
                         <a href="index.html"> <img src="logo.png" alt="" class="pull-left">
@@ -35,7 +35,7 @@
                     <div class="col-md-6">
                         <div class="icons pull-right">
                             <a href="#"><img src="england.jpg" alt=""></a>
-                            <a href="#"><img src="turkey.jpg" alt=""></a>
+                            <a href="projects-rtl.html"><img src="turkey.jpg" alt=""></a>
                             <a href="index.html"><i class="fas fa-home"></i></a>
                             <a href="#"><i class="fas fa-bars"></i></a>
                         </div>
@@ -57,6 +57,9 @@
                             <li data-class="con4">
                                 <h4>3 <sup>st</sup> project</h4>
                             </li>
+                            <div class="pull-right">
+                                <a href="#"><i class="fas fa-angle-right"></i></a>
+                            </div>
                         </ul>
                         <div class=" right-part">
                             <div class="con2">
@@ -83,7 +86,13 @@
 
     <script src="jquery-3.3.1.min.js"></script>
     <script src="bootstrap.min.js"></script>
-    <script src="main.js"></script>
+    <script>
+        $(".list-choose>li").click(function() {
+            $(this).addClass("active").siblings().removeClass("active");
+            $(".right-part>div").hide()
+            $("." + $(this).data("class")).fadeIn(1000)
+        });
+    </script>
 </body>
 
 </html>
