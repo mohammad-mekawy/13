@@ -1,0 +1,243 @@
+/* home */
+
+.main-container>img:first-child {
+    transform: rotatey(360deg);
+    left: -7px;
+}
+
+.main-container>img:nth-child(2) {
+    transform: rotatey(360deg);
+    bottom: 0px;
+    right: 0;
+}
+
+.logo-part h4:first-child {
+    font-size: 18px;
+    font-family: "Tajawal", sans-serif;
+}
+
+.logo-part h4 {
+    font-size: 20px;
+}
+
+.logo-part h4 {
+    text-shadow: -3px 3px 10px grey;
+}
+
+.circle-box a {
+    font-size: 18px;
+    font-family: "Tajawal", sans-serif;
+    font-weight: 600;
+}
+
+.circle-box>div {
+    height: 95px;
+    width: 95px;
+}
+
+
+/* /home */
+
+
+/* my-panel */
+
+.my-panel>ul li {
+    float: right;
+}
+
+.my-panel>ul li h4 {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: "Tajawal", sans-serif;
+}
+
+.my-panel p {
+    font-family: "Tajawal", sans-serif;
+    font-weight: 500;
+}
+
+
+/* /my-panel */
+
+
+/* partner */
+
+.Partners .h1 {
+    font-family: "Tajawal", sans-serif;
+}
+
+.Partners .owl-item.center p {
+    width: 400px;
+    left: -85px;
+    text-indent: 0px;
+    font-family: "Tajawal", sans-serif;
+}
+
+.Partners .owl-item.center span {
+    margin: 0px;
+}
+
+
+/* /partner */
+
+
+/* profile */
+
+.profile .h1 {
+    font-family: "Tajawal", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.profile h3 {
+    font-family: "Tajawal", sans-serif;
+}
+
+.profile p.lead {
+    font-family: "Tajawal", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+
+/* /profile */
+
+
+/* contact-us */
+
+.contact-us .h1 {
+    font-family: "Tajawal", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.contact-us p {
+    font-size: 25px;
+    font-family: "Tajawal", sans-serif;
+}
+
+.contact-us input,
+.contact-us textarea {
+    font-family: "Tajawal", sans-serif;
+    font-size: 18px;
+}
+
+::-webkit-input-placeholder {
+    font-size: 18px;
+    font-family: "Tajawal", sans-serif;
+}
+
+::-moz-placeholder {
+    font-size: 18px;
+    font-family: "Tajawal", sans-serif;
+}
+
+:-ms-input-placeholder {
+    font-size: 18px;
+    font-family: "Tajawal", sans-serif;
+}
+
+:-moz-placeholder {
+    font-size: 18px;
+    font-family: "Tajawal", sans-serif;
+}
+
+.contact-us input[type="submit"] {
+    font-size: 23px;
+    padding: 0px 30px;
+    font-family: "Tajawal", sans-serif;
+}
+
+
+/* /contact-us */
+
+
+/* events-timeLine */
+
+.events>.h1 {
+    font-family: "Tajawal", sans-serif;
+    font-size: 34px;
+}
+
+.events .dotted-line .con8 p:first-of-type {
+    font-size: 27px;
+    font-weight: 600;
+    position: absolute;
+    width: 310px;
+    left: -146px;
+    font-family: "Tajawal", sans-serif;
+}
+
+.events .dotted-line .con8 p:last-of-type {
+    margin-top: 65px;
+}
+
+
+/* /events-timeLine */
+
+
+/* meeting */
+
+.meeting .h1 {
+    font-size: 23px;
+    font-weight: bold;
+    margin-right: -15px;
+    font-family: "Tajawal", sans-serif;
+}
+
+.meeting h3 {
+    margin-right: -15px;
+}
+
+.meeting p {
+    font-family: "Tajawal", sans-serif;
+    font-weight: 400;
+}
+
+
+/* /meeting */
+
+
+/* news */
+
+.media-right {
+    float: right;
+}
+
+.news h3 {
+    font-size: 25px;
+    font-family: "Tajawal", sans-serif;
+}
+
+.news h4 {
+    font-size: 19px;
+}
+
+.news p {
+    font-size: 17px;
+    font-family: "Tajawal", sans-serif;
+}
+
+
+/* /news */
+
+
+/* our-partner */
+
+.our-partner h2,
+.our-partner h3 {
+    font-family: "Tajawal", sans-serif;
+}
+
+
+/* /our-partner */
+
+
+/* press-conference */
+
+.press-conference .h1 {
+    font-family: "Tajawal", sans-serif;
+}
+
+
+/* /press-conference */
