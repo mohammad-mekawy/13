@@ -7,31 +7,33 @@
     <title>HOME</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="bootstrap.min.css">
+    <link rel="stylesheet" href="owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main-rtl.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <style>
+        .main-part {
+            padding-top: 30px
+        }
+    </style>
 </head>
 
 <body>
     <div class="main-container">
-        <img src="1.png" alt="" class="img-responsive">
-        <img src="2.png" alt="" class="img-responsive">
         <div class="logo-part">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-6">
-                        <a href="index.html"> <img src="logo.png" alt="" class="pull-left">
+                    <div class="col-md-6 pull-right">
+                        <a href="index.html"> <img src="logo-text.png" alt="" class="img-responsive logo">
                         </a>
-                        <div class="text pull-left">
-                            <h4>Medical Arabic-Turkish Investing Holding Company</h4>
-                            <h4 dir="rtl"> الشركة الطبية العربية التركية للإستثمار القابضة</h4>
-                        </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="icons pull-right">
-                            <a href="#"><img src="england.jpg" alt=""></a>
-                            <a href="index-rtl.html"><img src="turkey.jpg" alt=""></a>
-                            <a href="index.html"><i class="fas fa-home"></i></a>
+                    <div class="col-md-6 pull-left">
+                        <div class="icons">
                             <a href="#"><i class="fas fa-bars"></i></a>
+                            <a href="index.html"><i class="fas fa-home"></i></a>
+                            <a href="#"><img src="turkey.jpg" alt=""></a>
+                            <a href="index-en.html"><img src="england.jpg" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -42,27 +44,35 @@
                 <div class="row">
                     <div class="col-md-6 col-md-push-3">
                         <div class="circle-box">
-                            <div class="circle"><a href="matihco.html">MATIHCO</a></div>
-                            <div class="circle"><a href="news.html">NEWS</a></div>
-                            <div class="circle"><a href="Invest.html">INVESMENT CHANCES </a></div>
-                            <div class="circle active"><a href="Invest.html">INVESMNT IN TURKEY</a></div>
-                            <div class="circle"><a href="contact-us.html">CONTACT US</a></div>
-                            <div class="circle"><a href="our-partner.html">OUR PARTNERS </a></div>
-                            <div class="circle"><a href="projects.html">PROJECTS </a></div>
-                            <div class="circle"><a href="events-timeLine.html">EVENTS </a></div>
+                            <div class="circle"><img src="cir-or.png" class="cir-or" alt=""><a dir="rtl" href="matihco-rtl.html">ماتيهكو</a>
+                            </div>
+                            <div class="circle"><img src="cir-or.png" alt=""><a dir="rtl" href="projects-rtl.html">المشاريع </a></div>
+                            <div class="circle"><img src="cir-or.png" alt=""><a dir="rtl" href="our-partner-rtl.html">الشركاء </a></div>
+                            <div class="circle"><img src="cir-or.png" alt=""><a dir="rtl" href="contact-us-rtl.html">للتواصل</a></div>
+                            <div class="circle"><img src="cir-or.png" alt=""><a dir="rtl" href="Invest-rtl.html" class="sp">استثمر في تركيا</a></div>
+                            <div class="circle"><img src="cir-or.png" alt=""><a dir="rtl" href="partners-rtl.html">الأعضاء المؤسسين </a></div>
+                            <div class="circle"><img src="cir-or.png" alt=""><a dir="rtl" href="news-rtl.html">الأخبار</a></div>
+                            <div class="circle"><img src="cir-or.png" alt=""><a dir="rtl" href="events-timeLine-rtl.html">الفعاليات </a></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
     <script src="jquery-3.3.1.min.js"></script>
     <script src="bootstrap.min.js"></script>
+    <script src="owl.carousel.min.js"></script>
     <script>
         $(".circle").click(function() {
-            window.location = $(this).children().attr("href");
+            window.location = $(this).find("a").attr("href");
         })
+        $(".circle-box>div").mouseenter(function() {
+            $(this).find("img").attr("src", "cir-bl.png")
+        })
+        $(".circle-box>div").mouseleave(function() {
+            $(this).find("img").attr("src", "cir-or.png")
+        })
+        $(".circle-box").delay(1000).fadeIn(1000)
     </script>
 </body>
 

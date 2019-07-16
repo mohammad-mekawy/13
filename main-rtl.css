@@ -1,38 +1,38 @@
+.main-container {
+    background-image: url(home-back-plus.png);
+}
+
+@media (max-width: 992px) {
+    .main-container {
+        background: url(home-back.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 992px) {
+    .logo-part .logo {
+        float: right;
+    }
+    .logo-part .icons {
+        float: left;
+        margin: 21px 100px;
+    }
+}
+
+
 /* home */
-
-.main-container>img:first-child {
-    transform: rotatey(360deg);
-    left: -7px;
-}
-
-.main-container>img:nth-child(2) {
-    transform: rotatey(360deg);
-    bottom: 0px;
-    right: 0;
-}
-
-.logo-part h4:first-child {
-    font-size: 18px;
-    font-family: "Tajawal", sans-serif;
-}
-
-.logo-part h4 {
-    font-size: 20px;
-}
-
-.logo-part h4 {
-    text-shadow: -3px 3px 10px grey;
-}
 
 .circle-box a {
     font-size: 18px;
-    font-family: "Tajawal", sans-serif;
-    font-weight: 600;
+    font-family: "Cocon-NextArabic-Bold", sans-serif;
 }
 
-.circle-box>div {
-    height: 95px;
-    width: 95px;
+.circle-box a.sp {
+    width: 70px;
 }
 
 
@@ -45,15 +45,20 @@
     float: right;
 }
 
+@media (max-width: 992px) {
+    .my-panel>ul li {
+        width: 77%;
+    }
+}
+
 .my-panel>ul li h4 {
     font-size: 28px;
-    font-weight: bold;
-    font-family: "Tajawal", sans-serif;
+    font-family: "Cocon-NextArabic-Bold", sans-serif;
+    float: right;
 }
 
 .my-panel p {
-    font-family: "Tajawal", sans-serif;
-    font-weight: 500;
+    font-family: "Cocon-NextArabic-Regular", sans-serif;
 }
 
 
@@ -62,19 +67,20 @@
 
 /* partner */
 
-.Partners .h1 {
-    font-family: "Tajawal", sans-serif;
-}
-
+.Partners .h1,
 .Partners .owl-item.center p {
-    width: 400px;
-    left: -85px;
-    text-indent: 0px;
-    font-family: "Tajawal", sans-serif;
+    font-family: "Cocon-NextArabic-Regular", sans-serif;
 }
 
-.Partners .owl-item.center span {
-    margin: 0px;
+@media (min-width: 991px) {
+    .Partners .owl-item.center p {
+        position: absolute;
+        width: 400px;
+        left: -135px;
+    }
+    .Partners .owl-item span.job-title {
+        margin-left: 65px;
+    }
 }
 
 
@@ -84,19 +90,17 @@
 /* profile */
 
 .profile .h1 {
-    font-family: "Tajawal", sans-serif;
-    font-weight: bold;
+    font-family: "Cocon-NextArabic-Bold", sans-serif;
     font-size: 30px;
 }
 
 .profile h3 {
-    font-family: "Tajawal", sans-serif;
+    font-family: "Cocon-NextArabic-Regular", sans-serif;
 }
 
 .profile p.lead {
-    font-family: "Tajawal", sans-serif;
+    font-family: "Cocon-NextArabic-Regular", sans-serif;
     font-size: 22px;
-    font-weight: 500;
 }
 
 
@@ -106,46 +110,51 @@
 /* contact-us */
 
 .contact-us .h1 {
-    font-family: "Tajawal", sans-serif;
+    font-family: "Cocon-NextArabic-Regular", sans-serif;
     font-size: 30px;
-    font-weight: bold;
 }
 
 .contact-us p {
     font-size: 25px;
-    font-family: "Tajawal", sans-serif;
+    font-family: "Cocon-NextArabic-Light", sans-serif;
 }
 
 .contact-us input,
 .contact-us textarea {
-    font-family: "Tajawal", sans-serif;
+    font-family: "Cocon-NextArabic-Light", sans-serif;
     font-size: 18px;
 }
 
 ::-webkit-input-placeholder {
     font-size: 18px;
-    font-family: "Tajawal", sans-serif;
+    font-family: "Cocon-NextArabic-Light", sans-serif;
 }
 
 ::-moz-placeholder {
     font-size: 18px;
-    font-family: "Tajawal", sans-serif;
+    font-family: "Cocon-NextArabic-Light", sans-serif;
 }
 
 :-ms-input-placeholder {
     font-size: 18px;
-    font-family: "Tajawal", sans-serif;
+    font-family: "Cocon-NextArabic-Light", sans-serif;
 }
 
 :-moz-placeholder {
     font-size: 18px;
-    font-family: "Tajawal", sans-serif;
+    font-family: "Cocon-NextArabic-Light", sans-serif;
 }
 
 .contact-us input[type="submit"] {
     font-size: 23px;
     padding: 0px 30px;
-    font-family: "Tajawal", sans-serif;
+    font-family: "Cocon-NextArabic-Light", sans-serif;
+}
+
+@media (max-width: 992px) {
+    .contact-us .col-md-5 {
+        width: 100%;
+    }
 }
 
 
@@ -155,21 +164,22 @@
 /* events-timeLine */
 
 .events>.h1 {
-    font-family: "Tajawal", sans-serif;
+    font-family: "Cocon-NextArabic-Bold", sans-serif;
     font-size: 34px;
 }
 
-.events .dotted-line .con8 p:first-of-type {
+.events .dotted-line .con p:first-of-type {
     font-size: 27px;
     font-weight: 600;
-    position: absolute;
-    width: 310px;
-    left: -146px;
-    font-family: "Tajawal", sans-serif;
+    font-family: "Cocon-NextArabic-Light", sans-serif;
 }
 
-.events .dotted-line .con8 p:last-of-type {
-    margin-top: 65px;
+@media (min-width: 992px) {
+    .events .dotted-line .con p:first-of-type {
+        position: absolute;
+        width: 210px;
+        left: -92px;
+    }
 }
 
 
@@ -180,9 +190,8 @@
 
 .meeting .h1 {
     font-size: 23px;
-    font-weight: bold;
     margin-right: -15px;
-    font-family: "Tajawal", sans-serif;
+    font-family: "Cocon-NextArabic-Bold", sans-serif;
 }
 
 .meeting h3 {
@@ -190,8 +199,7 @@
 }
 
 .meeting p {
-    font-family: "Tajawal", sans-serif;
-    font-weight: 400;
+    font-family: "Cocon-NextArabic-Light", sans-serif;
 }
 
 
@@ -205,8 +213,8 @@
 }
 
 .news h3 {
-    font-size: 25px;
-    font-family: "Tajawal", sans-serif;
+    font-size: 23px;
+    font-family: "Cocon-NextArabic-Bold", sans-serif;
 }
 
 .news h4 {
@@ -215,7 +223,7 @@
 
 .news p {
     font-size: 17px;
-    font-family: "Tajawal", sans-serif;
+    font-family: "Cocon-NextArabic-Light", sans-serif;
 }
 
 
@@ -224,9 +232,12 @@
 
 /* our-partner */
 
-.our-partner h2,
+.our-partner h2 {
+    font-family: "Cocon-NextArabic-Bold", sans-serif;
+}
+
 .our-partner h3 {
-    font-family: "Tajawal", sans-serif;
+    font-family: "Cocon-NextArabic-Regular", sans-serif;
 }
 
 
@@ -236,7 +247,7 @@
 /* press-conference */
 
 .press-conference .h1 {
-    font-family: "Tajawal", sans-serif;
+    font-family: "Cocon-NextArabic-Bold", sans-serif;
 }
 
 

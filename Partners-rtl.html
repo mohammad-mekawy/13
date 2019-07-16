@@ -11,33 +11,27 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
     <link rel="stylesheet" type="text/css" media="screen" href="main-rtl.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Tajawal:300,400,500,700&display=swap" rel="stylesheet">
+
     <style>
         .main-container {
-            background-image: url(testimonial.jpg)
+            background-image: url(partners-plus.jpg)
         }
     </style>
 </head>
 
 <body>
     <div class="main-container">
-        <img src="1.png" alt="" class="img-responsive">
-        <img src="2.png" alt="" class="img-responsive">
         <div class="logo-part">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6 pull-right">
-                        <a href="index-rtl.html"> <img src="logo.png" alt="" class="pull-right">
+                        <a href="index.html"> <img src="logo-text.png" alt="" class="img-responsive logo">
                         </a>
-                        <div class="text pull-right">
-                            <h4 dir="rtl"> الشركة الطبية العربية التركية للإستثمار القابضة</h4>
-                            <h4>Medical Arabic-Turkish Investing Holding Company</h4>
-                        </div>
                     </div>
                     <div class="col-md-6 pull-left">
-                        <div class="icons pull-left">
+                        <div class="icons">
                             <a href="#"><i class="fas fa-bars"></i></a>
-                            <a href="index-rtl.html"><i class="fas fa-home"></i></a>
+                            <a href="index.html"><i class="fas fa-home"></i></a>
                             <a href="#"><img src="turkey.jpg" alt=""></a>
                             <a href="partners.html"><img src="england.jpg" alt=""></a>
                         </div>
@@ -52,29 +46,38 @@
                     <!-- owl -->
                     <div class="owl-one owl-carousel owl-theme">
                         <div>
-                            <img src="profile1.png" alt="logo1" class="img1 img-responsive">
+                            <a href="profile-rtl.html">
+                                <img src="profile1.png" alt="logo1" class="img1 img-responsive">
+                            </a>
                             <div class="layer"></div>
                             <p class="name" dir="rtl">الدكتور المهندس محمد وسيم باريخان <br><span class="job-title">رئيس
                                     مجلس الإدارة</span> </p>
                         </div>
-                        <div> <img src="p2.png" alt="logo1" class="img2 img-responsive">
+                        <div>
+                            <a href="#">
+                                <img src="p2.png" alt="logo1" class="img2 img-responsive">
+                            </a>
                             <div class="layer"></div>
                             <p class="name" dir="rtl">نص نص نص نص نص نص نص <br><span class="job-title">نص نص نص نص
                                 </span> </p>
                         </div>
-                        <div> <img src="4.png" alt="logo1" class="img3 img-responsive">
+                        <div>
+                            <a href="#"><img src="4.png" alt="logo1" class="img3 img-responsive"></a>
                             <div class="layer"></div>
                             <p class="name" dir="rtl">نص نص نص نص نص نص نص <br><span class="job-title">نص نص نص نص
                                 </span> </p>
                         </div>
-                        <div> <img src="5.png" alt="logo1" class="img3 img-responsive">
+                        <div>
+                            <a href="#"><img src="5.png" alt="logo1" class="img3 img-responsive"></a>
                             <div class="layer"></div>
                             <p class="name" dir="rtl">نص نص نص نص نص نص نص <br><span class="job-title">نص نص نص نص
                                 </span> </p>
                         </div>
-                        <div> <img src="p3.png" alt="logo1" class="img2 img-responsive">
-                            <div class="layer" dir="rtl"></div>
-                            <p class="name">نص نص نص نص نص نص نص <br><span class="job-title">نص نص نص نص</span> </p>
+                        <div>
+                            <a href="#"><img src="p3.png" alt="logo1" class="img2 img-responsive"></a>
+                            <div class="layer"></div>
+                            <p class="name" dir="rtl">نص نص نص نص نص نص نص <br><span class="job-title">نص نص نص
+                                    نص</span> </p>
                         </div>
                     </div>
                     <!-- /owl -->
@@ -92,8 +95,9 @@
             loop: true,
             dotsEach: true,
             margin: 0,
+            smartSpeed: 1000,
             center: true,
-            autoplay: true,
+            autoplay: false,
             nav: true,
             autoplayTimeout: 5000,
             autoplayHoverPause: true,
@@ -110,6 +114,10 @@
                 }
             }
         });
+        $(".owl-theme div .layer").click(function() {
+            $(this).parent().parent().addClass("center")
+            $(this).parent().parent().siblings().removeClass("center")
+        })
     </script>
 </body>
 

@@ -8,36 +8,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="bootstrap.min.css">
     <link rel="stylesheet" href="owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="owl.theme.default.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <style>
         .main-container {
-            background-image: url(testimonial.jpg)
+            background-image: url(partners.jpg)
         }
     </style>
 </head>
 
 <body>
     <div class="main-container">
-        <img src="1.png" alt="" class="img-responsive">
-        <img src="2.png" alt="" class="img-responsive">
+        <img src="1.png" alt="" class="img-responsive hidden-xs hidden-sm">
+        <img src="2.png" alt="" class="img-responsive hidden-xs hidden-sm">
         <div class="logo-part">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6">
-                        <a href="index.html"> <img src="logo.png" alt="" class="pull-left">
+                        <a href="index-en.html"> <img src="logo-text-en.png" alt="" class="img-responsive logo">
                         </a>
-                        <div class="text pull-left">
-                            <h4>Medical Arabic-Turkish Investing Holding Company</h4>
-                            <h4 dir="rtl"> الشركة الطبية العربية التركية للإستثمار القابضة</h4>
-                        </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="icons pull-right">
-                            <a href="#"><img src="england.jpg" alt=""></a>
-                            <a href="Partners-rtl.html"><img src="turkey.jpg" alt=""></a>
-                            <a href="index.html"><i class="fas fa-home"></i></a>
-                            <a href="#"><i class="fas fa-bars"></i></a>
+                        <div class="icons">
+                            <a href="#" class="mob-hd"><img src="england.jpg" alt=""></a>
+                            <a href="Partners-rtl.html" class="mob-hd"><img src="turkey.jpg" alt=""></a>
+                            <a href="index-en.html" class="mob-hd"><i class="fas fa-home"></i></a>
+                            <a href="#" class="a-bars"><i class="fas fa-bars"></i></a>
                         </div>
                     </div>
                 </div>
@@ -50,27 +47,31 @@
                     <!-- owl -->
                     <div class="owl-one owl-carousel owl-theme">
                         <div>
-                            <img src="profile1.png" alt="logo1" class="img1 img-responsive">
+                            <a href="profile.html"><img src="profile1.png" alt="logo1" class="img1 img-responsive"></a>
                             <div class="layer"></div>
                             <p class="name">Eng. Mohamed Waseem Parekhan <br><span class="job-title">Chairman of Board
                                     of Directors</span> </p>
                         </div>
-                        <div> <img src="p2.png" alt="logo1" class="img2 img-responsive">
+                        <div>
+                            <a href="#"><img src="p2.png" alt="logo1" class="img2 img-responsive"></a>
                             <div class="layer"></div>
                             <p class="name">Lorem ipsum dolor sit amet <br><span class="job-title">Lorem ipsum
                                     dolor</span> </p>
                         </div>
-                        <div> <img src="4.png" alt="logo1" class="img3 img-responsive">
+                        <div>
+                            <a href="#"><img src="4.png" alt="logo1" class="img3 img-responsive"></a>
                             <div class="layer"></div>
                             <p class="name">Lorem ipsum dolor sit amet <br><span class="job-title">Lorem ipsum
                                     dolor</span> </p>
                         </div>
-                        <div> <img src="5.png" alt="logo1" class="img3 img-responsive">
+                        <div>
+                            <a href="#"><img src="5.png" alt="logo1" class="img3 img-responsive"></a>
                             <div class="layer"></div>
                             <p class="name">Lorem ipsum dolor sit amet <br><span class="job-title">Lorem ipsum
                                     dolor</span> </p>
                         </div>
-                        <div> <img src="p3.png" alt="logo1" class="img2 img-responsive">
+                        <div>
+                            <a href="#"><img src="p3.png" alt="logo1" class="img2 img-responsive"></a>
                             <div class="layer"></div>
                             <p class="name">Lorem ipsum dolor sit amet <br><span class="job-title">Lorem ipsum
                                     dolor</span> </p>
@@ -92,6 +93,7 @@
             dotsEach: true,
             margin: 0,
             center: true,
+            smartSpeed: 1000,
             autoplay: true,
             nav: true,
             autoplayTimeout: 5000,
@@ -109,6 +111,10 @@
                 }
             }
         });
+        $(".owl-theme div .layer").click(function() {
+            $(this).parent().parent().addClass("center")
+            $(this).parent().parent().siblings().removeClass("center")
+        })
     </script>
 </body>
 
